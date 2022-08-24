@@ -13,7 +13,15 @@ attr_reader :name, :capacity, :patrons
 
   def add_patron(name)
   @patrons_arr << name
+  end
+
+  def yell_at_patrons
+    patrons = @patrons_arr
+    patrons.map do |patron|
+      patron.upcase
+    end
 
   end
+
 
 end
