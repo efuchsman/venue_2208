@@ -71,6 +71,8 @@ describe Venue do
     end
   end
 
+  # Iteration 4
+
   describe '#kick_out' do
     it 'removes extra patrons from the venue' do
       venue = Venue.new('Bluebird', 4)
