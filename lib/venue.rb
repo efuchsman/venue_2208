@@ -11,4 +11,9 @@ attr_reader :name, :capacity, :patrons
     @patrons_arr
   end
 
+  def add_patron(name)
+  @patrons_arr << name
+
+  end
+
 end
