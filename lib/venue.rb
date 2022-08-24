@@ -20,7 +20,14 @@ attr_reader :name, :capacity, :patrons
     patrons.map do |patron|
       patron.upcase
     end
+  end
 
+  def over_capacity?
+    if @patrons_arr.count > @capacity
+      true
+    else
+      false
+    end
   end
 
 
