@@ -30,5 +30,9 @@ attr_reader :name, :capacity, :patrons
     end
   end
 
-
+  def kick_out
+    if @patrons_arr.count > @capacity
+      @patrons_arr.shift
+    end
+  end
 end
